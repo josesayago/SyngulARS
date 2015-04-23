@@ -13,16 +13,16 @@
  * SyngulARS is an unregistered trademark of WP Latino, 
  * and cannot be re-used in conjunction with the GPL v2 usage of this software 
  * under the license terms of the GPL v2 without permission.
- *
  */
 // Paths
+define( 'SYNGULARS_PATH', 'syngulars', true );
 define( 'SYNGULARS_ROOT', dirname( __FILE__ ), true );
 define( 'SYNGULARS_SYSTEM', SYNGULARS_ROOT . '/core/system/', true );
-define( 'SYNGULARS_ASSETS', SYNGULARS_ROOT . '/core/assets/', true );
+define( 'SYNGULARS_ASSETS', SYNGULARS_PATH . '/core/assets/', true );
 // Current Version
 define( 'SYNGULARS_VERSION', '0.1', true );
 // Classes
 require_once SYNGULARS_SYSTEM . '_options.php';
-require_once SYNGULARS_SYSTEM . '_dashboard.php';
-require_once SYNGULARS_SYSTEM . '_editor.php';
+//require_once SYNGULARS_SYSTEM . '_dashboard.php';
+//require_once SYNGULARS_SYSTEM . '_editor.php';
 ?>

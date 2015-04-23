@@ -14,5 +14,6 @@ License: GNU General Public License 2.0 (GPL) http://www.gnu.org/licenses/gpl.ht
  * SyngulARS is an unregistered trademark of WP Latino, 
  * and cannot be re-used in conjunction with the GPL v2 usage of this software 
  * under the license terms of the GPL v2 without permission.
- *
  */
+include_once '_config.php';
+?>
