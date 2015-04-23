@@ -1,24 +1,39 @@
 <?php
 /**
- * Add menu if admin
+ * SyngulARS
+ *
+ * Options class.
  */
-if ( is_admin() ) {
-	add_action( 'admin_menu', 'syngulars_menu' );
-}
-/**
- * Create Menu
- */
-function syngulars_menu() {
-	// Create new top-level menu
-	add_menu_page(
-		__('SyngulARS','syngulars'), 
-		'SyngulARS', 
-		'administrator', 
-		'syngulars', 
-		'_dashboard',
-		plugins_url( SYNGULARS_ASSETS . '/icons/menu.png', '' )
-	);
-	// Call register settings function
-	// add_action( 'admin_init', 'syngulars_register' );
+Class SyngulARS_Options {
+	/**
+	 * Set Option Menu
+	 */
+	public function _set() {
+		/**
+		 * Add menu if admin
+		 */
+		if ( is_admin() ) {
+			add_action( 'admin_menu', array( __CLASS__, '_menu' ) );
+		}
+	}
+	/**
+	 * Menu
+	 * 
+	 * Sets the WordPress dashboard menu to access
+	 * SyngulARS.
+	 */
+	public function _menu() {
+		/**
+		 * Create new top-level menu
+		 */
+		add_menu_page(
+			__('SyngulARS','syngulars'), 
+			'SyngulARS', 
+			'administrator', 
+			'syngulars', 
+			array( 'SyngulARS_Dashboard', '_dashboard' ),
+			plugins_url( SYNGULARS_ASSETS . '/icons/menu.png', '' )
+		);
+	}
 }
 ?>

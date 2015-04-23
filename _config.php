@@ -23,6 +23,6 @@ define( 'SYNGULARS_ASSETS', SYNGULARS_PATH . '/core/assets/', true );
 define( 'SYNGULARS_VERSION', '0.1', true );
 // Classes
 require_once SYNGULARS_SYSTEM . '_options.php';
-//require_once SYNGULARS_SYSTEM . '_dashboard.php';
+require_once SYNGULARS_SYSTEM . '_dashboard.php';
 //require_once SYNGULARS_SYSTEM . '_editor.php';
 ?>
