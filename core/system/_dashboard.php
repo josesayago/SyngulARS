@@ -22,9 +22,27 @@ Class SyngulARS_Dashboard {
 
 				$html 	.= '<h2>'.$title_S1.'</h2>';
 
-				$html 	.= '<input type="text" name="{{template_name}}" placeholder="'.$theme_name.'" />';
+				$html 	.= '<div class="content-indent">';
 
-				$html 	.= '<a class="save"><span class="btn-text">'.$save_btn.'</span> <img src="'.SYNGULARS_ASSETS.'icons/save.png" /></a>';
+					$html 	.= '<input type="text" name="{{template_name}}" placeholder="'.$theme_name.'" />';
+
+					$html 	.= '<a class="save"><span class="btn-text">'.$save_btn.'</span> <img src="'.SYNGULARS_ASSETS.'icons/save.png" /></a>';
+
+					$html 	.= '<p class="italic">'.__('Your base layout will be','syngulars').':</p>';
+
+					$html 	.= '<input type="radio" name="{{template_type}}" value="landing-page" /><span class="radio-label">'.__('Landing Page','syngulars').'</span>';
+					
+					$html 	.= '<input type="radio" name="{{template_type}}" value="post" /><span class="radio-label">'.__('Post','syngulars').'</span>';
+					
+					$html 	.= '<input type="radio" name="{{template_type}}" value="page" /><span class="radio-label">'.__('Page','syngulars').'</span>';
+
+					$html 	.= '<div class="clearfix">&nbsp;</div>';
+
+					$html 	.= '<p class="italic">'.__('TIP: These base layouts can be completely customized, this is just a quick start.','syngulars').'</p>';
+
+					$html 	.= '<div class="clearfix">&nbsp;</div>';
+
+				$html 	.= '</div>';
 
 			$html 	.= '</div>';
   		

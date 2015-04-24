@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Syngulars\n"
-"POT-Creation-Date: 2015-04-24 08:13-0430\n"
-"PO-Revision-Date: 2015-04-24 08:13-0430\n"
+"POT-Creation-Date: 2015-04-24 09:26-0430\n"
+"PO-Revision-Date: 2015-04-24 09:27-0430\n"
 "Last-Translator: Jose Luis Sayago Rojas <jose.sayago@laelite.info>\n"
 "Language-Team: WP Latino <code@wplatino.com>\n"
 "Language: es\n"
@@ -33,6 +33,30 @@ msgstr "Nombre de tu tema"
 #: ../../../core/system/_dashboard.php:13 ../../system/_dashboard.php:13
 msgid "Save"
 msgstr "Guardar"
+
+#: ../../../core/system/_dashboard.php:31 ../../system/_dashboard.php:31
+msgid "Your base layout will be"
+msgstr "Esta estructura base será"
+
+#: ../../../core/system/_dashboard.php:33 ../../system/_dashboard.php:33
+msgid "Landing Page"
+msgstr "Página Principal"
+
+#: ../../../core/system/_dashboard.php:35 ../../system/_dashboard.php:35
+msgid "Post"
+msgstr "Artículo"
+
+#: ../../../core/system/_dashboard.php:37 ../../system/_dashboard.php:37
+msgid "Page"
+msgstr "Página"
+
+#: ../../../core/system/_dashboard.php:39 ../../system/_dashboard.php:39
+msgid ""
+"TIP: These base layouts can be completely customized, this is just a quick "
+"start."
+msgstr ""
+"TIP: Estas estructuras base pueden ser modificadas en su totalidad, esto "
+"es una guía para que sepas por donde comenzar."
 
 #: ../../../core/system/_options.php:32 ../../system/_options.php:32
 msgid "SyngulARS"

@@ -9,6 +9,7 @@ $white: 	rgba(255, 255, 255, 1);
 $cloud: 	rgba(241, 241, 242, 1);
 $aqua: 		rgba(  0, 167, 157, 1);
 $gray: 		rgba(229, 229, 229, 1);
+$concrete: 	rgba(128, 130, 132, 1);
 
 @mixin transitions( $sec... ) {
 	-webkit-transition: all $sec ease-out $sec;
@@ -21,6 +22,15 @@ $gray: 		rgba(229, 229, 229, 1);
 	width: 100vw;
 	margin: -2.5vh 0 0 -1.6vw;
 	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: $concrete;
+}
+.syngulars_dashboard .italic { font-style: italic; }
+.syngulars_dashboard .right { text-align: right; }
+.syngulars_dashboard .left { text-align: left; }
+.syngulars_dashboard .center { text-align: center; }
+.syngulars_dashboard .content-indent {
+	margin: 0 0 0 4vw;
 }
 .syngulars_dashboard h1 {
 	background: $aqua;
@@ -48,8 +58,6 @@ $gray: 		rgba(229, 229, 229, 1);
 .syngulars_dashboard input[type="text"] {
 	padding: .5em;
 	border: 0;
-	margin: 0 0 0 1.7vw;
-	font-weight: 100;
 	text-align: center;
 	font-style: italic;
 	height: 56px;
@@ -71,9 +79,10 @@ $gray: 		rgba(229, 229, 229, 1);
 	text-transform: uppercase;
 	color: $cloud;
 	font-style: italic;
+	font-weight: normal;
 	display: inline-block;
 	height: 40px;
-	width: 200px;
+	width: 160px;
 	padding: 15px 0 0 0;
 	text-align: center;
 	font-size: 1.125em;
@@ -90,4 +99,21 @@ $gray: 		rgba(229, 229, 229, 1);
 .syngulars_dashboard .step-1 a img {
 	margin: 0;
 	vertical-align: middle;
+}
+.syngulars_dashboard .step-1 input[type="radio"] {
+	background: $cloud;
+}
+.syngulars_dashboard .step-1 input[type="radio"]:focus,
+.syngulars_dashboard .step-1 input[type="radio"]:checked {
+	border-color: $aqua;
+	box-shadow: inset 0 0 2px rgba( $aqua, .7 );
+	background: $gray;
+}
+.syngulars_dashboard .step-1 input[type=radio]:checked:before {
+	background-color: $aqua;
+}
+.syngulars_dashboard .step-1 .radio-label {
+	text-transform: uppercase;
+	margin: 0 1vw 0 .3vw;
+	font-style: italic;
 }
