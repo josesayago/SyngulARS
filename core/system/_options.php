@@ -14,9 +14,9 @@ Class SyngulARS_Options {
 		 */
 		if ( is_admin() ) {
 			add_action( 'admin_menu', array( __CLASS__, '_menu' ) );
+			add_action( 'admin_init', array( __CLASS__, '_styles' ) );
+			add_action( 'admin_init', array( __CLASS__, '_scripts' ) );
 		}
-
-		$this->_styles();
 	}
 	/**
 	 * Menu
@@ -53,6 +53,23 @@ Class SyngulARS_Options {
         );
         // Enqueue style
         wp_enqueue_style( 'syngulars-style' );
+	}
+	/**
+	 * Scripts
+	 *
+	 * Load JavaScript files
+	 */
+	public function _scripts() {
+		// Register script
+		wp_register_script(
+			'ractivejs',
+			'http://cdn.ractivejs.org/latest/ractive.js',
+			'',
+			'latest',
+			false
+		);
+		// Enqueue script
+		wp_enqueue_script( 'ractivejs' );
 	}
 }
 ?>
