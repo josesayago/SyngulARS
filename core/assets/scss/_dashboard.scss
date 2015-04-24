@@ -1,0 +1,23 @@
+/**
+ * Dashboard Stylesheet
+ *
+ * Contains styling rules for elements
+ * within the SyngulARS dashboard.
+ */
+
+$white: 	rgba(255, 255, 255, 1);
+$aqua: 		rgba( 51, 178, 178, 1);
+$aqua_half: rgba( 51, 178, 178, .5);
+
+.syngulars_dashboard {
+	width: 100vw;
+	margin: -2.5vh 0 0 -1.6vw;
+	font-family: 'Roboto', sans-serif;
+}
+.syngulars_dashboard h1 {
+	background: $aqua;
+	color: $white;
+	padding: 1em 2em;
+	text-transform: uppercase;
+	font-weight: 100;
+}

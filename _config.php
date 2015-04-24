@@ -19,10 +19,13 @@ define( 'SYNGULARS_PATH', 'syngulars', true );
 define( 'SYNGULARS_ROOT', dirname( __FILE__ ), true );
 define( 'SYNGULARS_SYSTEM', SYNGULARS_ROOT . '/core/system/', true );
 define( 'SYNGULARS_ASSETS', SYNGULARS_PATH . '/core/assets/', true );
+define( 'SYNGULARS_STYLES', SYNGULARS_ASSETS . 'css/', true );
 // Current Version
 define( 'SYNGULARS_VERSION', '0.1', true );
 // Classes
 require_once SYNGULARS_SYSTEM . '_options.php';
 require_once SYNGULARS_SYSTEM . '_dashboard.php';
 //require_once SYNGULARS_SYSTEM . '_editor.php';
+// Load Languages
+load_plugin_textdomain('syngulars', false, SYNGULARS_ASSETS . 'lang/');
 ?>

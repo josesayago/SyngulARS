@@ -1,0 +1,27 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Syngulars\n"
+"POT-Creation-Date: 2015-04-23 19:41-0430\n"
+"PO-Revision-Date: 2015-04-23 19:43-0430\n"
+"Last-Translator: Jose Luis Sayago Rojas <jose.sayago@laelite.info>\n"
+"Language-Team: WP Latino <code@wplatino.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Language: es\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-1: ../..\n"
+"X-Poedit-SearchPath-2: ../../..\n"
+
+#: ../../../core/system/_dashboard.php:10 ../../system/_dashboard.php:10
+msgid "Welcome to the WordPress Theme Builder"
+msgstr "Bienvenido al Sistema de Creación de Temas para WordPress"
+
+#: ../../../core/system/_options.php:32 ../../system/_options.php:32
+msgid "SyngulARS"
+msgstr "SyngulARS"

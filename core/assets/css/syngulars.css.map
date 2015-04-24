@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;AAKQ,0EAAkE;;;;;;;ACM1E,oBAAqB;EACpB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,iBAAiB;EACzB,WAAW,EAAE,oBAAoB;;AAElC,uBAAwB;EACvB,UAAU,EATF,OAAsB;EAU9B,KAAK,EAXG,KAAsB;EAY9B,OAAO,EAAE,OAAO;EAChB,cAAc,EAAE,SAAS;EACzB,WAAW,EAAE,GAAG",
+"sources": ["../scss/syngulars.scss","../scss/_dashboard.scss"],
+"names": [],
+"file": "syngulars.css"
+}

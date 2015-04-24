@@ -7,7 +7,12 @@
 Class SyngulARS_Dashboard {
 	
 	public function _dashboard() {
-		echo "<h1>Ping</h1>";
+		$title 	= __('Welcome to the WordPress Theme Builder', 'syngulars');
+		$html 	= '<div class="syngulars_dashboard">';
+		$html  .= '<h1>'.$title.'</h1>';
+		$html  .= '</div>';
+
+		print $html;
 	}
 }
 ?>
