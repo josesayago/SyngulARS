@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Syngulars\n"
-"POT-Creation-Date: 2015-04-24 09:26-0430\n"
-"PO-Revision-Date: 2015-04-24 09:27-0430\n"
+"POT-Creation-Date: 2015-04-24 11:09-0430\n"
+"PO-Revision-Date: 2015-04-24 11:09-0430\n"
 "Last-Translator: Jose Luis Sayago Rojas <jose.sayago@laelite.info>\n"
 "Language-Team: WP Latino <code@wplatino.com>\n"
 "Language: es\n"
@@ -50,13 +50,35 @@ msgstr "Artículo"
 msgid "Page"
 msgstr "Página"
 
-#: ../../../core/system/_dashboard.php:39 ../../system/_dashboard.php:39
+#: ../../../core/system/_dashboard.php:41 ../../system/_dashboard.php:41
 msgid ""
 "TIP: These base layouts can be completely customized, this is just a quick "
 "start."
 msgstr ""
-"TIP: Estas estructuras base pueden ser modificadas en su totalidad, esto "
-"es una guía para que sepas por donde comenzar."
+"TIP: Estas estructuras base pueden ser modificadas en su totalidad, esto es "
+"una guía para que sepas por donde comenzar."
+
+#: ../../../core/system/_dashboard.php:49 ../../system/_dashboard.php:49
+msgid "Previous Step"
+msgstr "Paso Anterior"
+
+#: ../../../core/system/_dashboard.php:51 ../../system/_dashboard.php:51
+msgid "Next Step"
+msgstr "Siguiente Paso"
+
+#: ../../../core/system/_dashboard.php:59 ../../system/_dashboard.php:59
+#, fuzzy
+msgid "Blog"
+msgstr "Blog"
+
+#: ../../../core/system/_dashboard.php:69 ../../system/_dashboard.php:69
+#, fuzzy
+msgid "Portfolio"
+msgstr "Portafolio"
+
+#: ../../../core/system/_dashboard.php:79 ../../system/_dashboard.php:79
+msgid "Call to Action"
+msgstr "Llamada a la Acción"
 
 #: ../../../core/system/_options.php:32 ../../system/_options.php:32
 msgid "SyngulARS"
