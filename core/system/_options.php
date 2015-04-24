@@ -34,7 +34,7 @@ Class SyngulARS_Options {
 			'administrator', 
 			'syngulars', 
 			array( 'SyngulARS_Dashboard', '_dashboard' ),
-			plugins_url( SYNGULARS_ASSETS . '/icons/menu.png', '' )
+			SYNGULARS_ASSETS . 'icons/menu.png'
 		);
 	}
 	/**
@@ -46,7 +46,7 @@ Class SyngulARS_Options {
         // Register style
         wp_register_style( 
             'syngulars-style', 
-            plugins_url( SYNGULARS_STYLES . '/syngulars.css', '' ), 
+            SYNGULARS_STYLES . 'syngulars.css', 
             '', 
             SYNGULARS_VERSION, 
             'all' 
@@ -68,8 +68,16 @@ Class SyngulARS_Options {
 			'latest',
 			false
 		);
+		wp_register_script(
+			'syngulars-dashboard',
+			SYNGULARS_ASSETS . 'scripts/_dashboard.js',
+			'',
+			'latest',
+			true
+		);
 		// Enqueue script
 		wp_enqueue_script( 'ractivejs' );
+		wp_enqueue_script( 'syngulars-dashboard' );
 	}
 }
 ?>

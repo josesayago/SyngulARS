@@ -15,9 +15,10 @@
  * under the license terms of the GPL v2 without permission.
  */
 // Paths
-define( 'SYNGULARS_PATH', 'syngulars', true );
+define( 'SYNGULARS_PATH', plugin_dir_url( __FILE__ ), true );
 define( 'SYNGULARS_ROOT', dirname( __FILE__ ), true );
 define( 'SYNGULARS_SYSTEM', SYNGULARS_ROOT . '/core/system/', true );
+define( 'SYNGULARS_LANG', dirname( plugin_basename( __FILE__ ) ) . '/core/assets/lang/', true );
 define( 'SYNGULARS_ASSETS', SYNGULARS_PATH . '/core/assets/', true );
 define( 'SYNGULARS_STYLES', SYNGULARS_ASSETS . 'css/', true );
 // Current Version
@@ -27,5 +28,5 @@ require_once SYNGULARS_SYSTEM . '_options.php';
 require_once SYNGULARS_SYSTEM . '_dashboard.php';
 //require_once SYNGULARS_SYSTEM . '_editor.php';
 // Load Languages
-load_plugin_textdomain('syngulars', false, SYNGULARS_ASSETS . 'lang/');
+load_plugin_textdomain('syngulars', false, SYNGULARS_LANG);
 ?>

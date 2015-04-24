@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Syngulars\n"
-"POT-Creation-Date: 2015-04-23 23:43-0430\n"
-"PO-Revision-Date: 2015-04-23 23:43-0430\n"
+"POT-Creation-Date: 2015-04-24 08:13-0430\n"
+"PO-Revision-Date: 2015-04-24 08:13-0430\n"
 "Last-Translator: Jose Luis Sayago Rojas <jose.sayago@laelite.info>\n"
 "Language-Team: WP Latino <code@wplatino.com>\n"
 "Language: es\n"
@@ -22,9 +22,17 @@ msgstr ""
 msgid "Welcome to the WordPress Theme Builder"
 msgstr "Bienvenido al Sistema de Creación de Temas para WordPress"
 
-#: ../../../core/system/_dashboard.php:16 ../../system/_dashboard.php:16
+#: ../../../core/system/_dashboard.php:11 ../../system/_dashboard.php:11
 msgid "Name your Theme and Pick a Base Layout"
 msgstr "Nombra tu Tema y Escoge la Estructura Base que deseas utilizar"
+
+#: ../../../core/system/_dashboard.php:12 ../../system/_dashboard.php:12
+msgid "Theme name"
+msgstr "Nombre de tu tema"
+
+#: ../../../core/system/_dashboard.php:13 ../../system/_dashboard.php:13
+msgid "Save"
+msgstr "Guardar"
 
 #: ../../../core/system/_options.php:32 ../../system/_options.php:32
 msgid "SyngulARS"
