@@ -9,6 +9,7 @@ Class SyngulARS_Dashboard {
 	public function _dashboard() {
 		$title 		= __('Welcome to the WordPress Theme Builder', 'syngulars');
 		$title_S1 	= __('Name your Theme and Pick a Base Layout', 'syngulars');
+		$title_S2_a	= __('Edit layout', 'syngulars');
 		$theme_name = __('Theme name', 'syngulars');
 		$save_btn 	= __('Save', 'syngulars');
 		
@@ -18,7 +19,7 @@ Class SyngulARS_Dashboard {
 
 			$html  	.= '<h1>'.$title.'</h1>';
 
-			$html 	.= '<div class="step-1">';
+			$html 	.= '<div class="step-1 step-active">';
 
 				$html 	.= '<h2>'.$title_S1.'</h2>';
 
@@ -26,7 +27,7 @@ Class SyngulARS_Dashboard {
 
 					$html 	.= '<input type="text" name="template_name" placeholder="'.$theme_name.'" value="{{templateName}}" />';
 
-					$html 	.= '<a class="save" on-click="save_template"><span class="btn-text">'.$save_btn.'</span> <img src="'.SYNGULARS_ASSETS.'icons/save.png" /></a>';
+					$html 	.= '<a class="save" on-click="save_template"><span class="btn-text">'.$save_btn.'</span></a>';
 
 					$html 	.= '<p class="italic">'.__('Your base layout will be','syngulars').':</p>';
 
@@ -76,13 +77,31 @@ Class SyngulARS_Dashboard {
 
 					$html 	.= '</div>';
 
-					$html 	.= '<div class="step-btns">';
+				$html 	.= '</div>';
+
+				$html 	.= '<div class="step-btns">';
 
 						$html 	.= '<a class="btn-left inactive">'.__('Previous Step','syngulars').'</a>';
 
-						$html 	.= '<a class="btn-right">'.__('Next Step', 'syngulars').'</a>';
+						$html 	.= '<a class="btn-right" id="step-2">'.__('Next Step', 'syngulars').'</a>';
 
 					$html 	.= '</div>';
+
+			$html 	.= '</div>';
+
+			$html 	.= '<div class="step-2 step-inactive">';
+
+				$html 	.= '<h2>'.$title_S2_a.'</h2>';
+
+				$html 	.= '<div class="content-indent">';
+
+				$html 	.= '</div>';
+
+				$html 	.= '<div class="step-btns">';
+
+					$html 	.= '<a class="btn-left" id="step-1">'.__('Previous Step','syngulars').'</a>';
+
+					$html 	.= '<a class="btn-right" id="step-2">'.__('Next Step', 'syngulars').'</a>';
 
 				$html 	.= '</div>';
 

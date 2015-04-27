@@ -31,10 +31,13 @@ $concrete: 	rgba(128, 130, 132, 1);
 	color: $concrete;
 	overflow-x: hidden;
 }
+.syngulars_dashboard a { text-decoration: none; }
 .syngulars_dashboard .italic { font-style: italic; }
 .syngulars_dashboard .right { text-align: right; }
 .syngulars_dashboard .left { text-align: left; }
 .syngulars_dashboard .center { text-align: center; }
+.syngulars_dashboard .step-inactive { display: none; }
+.syngulars_dashboard .step-active { display: block; }
 .syngulars_dashboard .content-indent {
 	margin: 0 0 0 4vw;
 }
@@ -130,8 +133,19 @@ $concrete: 	rgba(128, 130, 132, 1);
 .syngulars_dashboard .content-templates {
 	margin: 0 0 0 1%;
 }
-
-.syngulars_dashboard .content-templates a {
+.syngulars_dashboard .template-model img {
+	height: auto;
+	width: 70%;
+}
+.syngulars_dashboard .template-model {
+	display: inline-block;
+	margin-bottom: 3%;
+	width: 30%;
+}
+/**
+ * Step Buttons
+ */
+ .syngulars_dashboard .step-btns a {
 	background: $gray;	
 	color: $aqua;
 	text-align: center;
@@ -144,33 +158,24 @@ $concrete: 	rgba(128, 130, 132, 1);
 	font-weight: 100;
 	@include borderradius(50px);
 }
-.syngulars_dashboard .content-templates a:hover {
+.syngulars_dashboard .step-btns a:hover {
 	background: $concrete;
 	color: $cloud;
 	border: 1px solid $cloud;
 }
-.syngulars_dashboard .content-templates a.inactive {
+.syngulars_dashboard .step-btns a.inactive {
 	color: $concrete;
 	border-color: $concrete;
 	pointer-events: none;
    	cursor: default;
 }
-.syngulars_dashboard .content-templates .step-btns {
+.syngulars_dashboard .step-btns {
 	display: block;
 	width: 80%;
 }
-.syngulars_dashboard .content-templates .btn-left {
+.syngulars_dashboard .btn-left {
 	float: left;
 }
-.syngulars_dashboard .content-templates .btn-right {
+.syngulars_dashboard .btn-right {
 	float: right;
-}
-.syngulars_dashboard .template-model {
-	display: inline-block;
-	margin-bottom: 3%;
-	width: 30%;
-}
-.syngulars_dashboard .template-model img {
-	height: auto;
-	width: 70%;
 }

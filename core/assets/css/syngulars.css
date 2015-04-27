@@ -18,6 +18,9 @@
   color: #808284;
   overflow-x: hidden; }
 
+.syngulars_dashboard a {
+  text-decoration: none; }
+
 .syngulars_dashboard .italic {
   font-style: italic; }
 
@@ -29,6 +32,12 @@
 
 .syngulars_dashboard .center {
   text-align: center; }
+
+.syngulars_dashboard .step-inactive {
+  display: none; }
+
+.syngulars_dashboard .step-active {
+  display: block; }
 
 .syngulars_dashboard .content-indent {
   margin: 0 0 0 4vw; }
@@ -136,7 +145,19 @@
 .syngulars_dashboard .content-templates {
   margin: 0 0 0 1%; }
 
-.syngulars_dashboard .content-templates a {
+.syngulars_dashboard .template-model img {
+  height: auto;
+  width: 70%; }
+
+.syngulars_dashboard .template-model {
+  display: inline-block;
+  margin-bottom: 3%;
+  width: 30%; }
+
+/**
+ * Step Buttons
+ */
+.syngulars_dashboard .step-btns a {
   background: #e5e5e5;
   color: #00a79d;
   text-align: center;
@@ -152,34 +173,25 @@
   -moz-border-radius: 50px;
   -ms-border-radius: 50px; }
 
-.syngulars_dashboard .content-templates a:hover {
+.syngulars_dashboard .step-btns a:hover {
   background: #808284;
   color: #f1f1f2;
   border: 1px solid #f1f1f2; }
 
-.syngulars_dashboard .content-templates a.inactive {
+.syngulars_dashboard .step-btns a.inactive {
   color: #808284;
   border-color: #808284;
   pointer-events: none;
   cursor: default; }
 
-.syngulars_dashboard .content-templates .step-btns {
+.syngulars_dashboard .step-btns {
   display: block;
   width: 80%; }
 
-.syngulars_dashboard .content-templates .btn-left {
+.syngulars_dashboard .btn-left {
   float: left; }
 
-.syngulars_dashboard .content-templates .btn-right {
+.syngulars_dashboard .btn-right {
   float: right; }
-
-.syngulars_dashboard .template-model {
-  display: inline-block;
-  margin-bottom: 3%;
-  width: 30%; }
-
-.syngulars_dashboard .template-model img {
-  height: auto;
-  width: 70%; }
 
 /*# sourceMappingURL=syngulars.css.map */
