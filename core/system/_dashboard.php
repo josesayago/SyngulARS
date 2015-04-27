@@ -24,17 +24,17 @@ Class SyngulARS_Dashboard {
 
 				$html 	.= '<div class="content-indent">';
 
-					$html 	.= '<input type="text" name="{{template_name}}" placeholder="'.$theme_name.'" />';
+					$html 	.= '<input type="text" name="template_name" placeholder="'.$theme_name.'" value="{{templateName}}" />';
 
-					$html 	.= '<a class="save"><span class="btn-text">'.$save_btn.'</span> <img src="'.SYNGULARS_ASSETS.'icons/save.png" /></a>';
+					$html 	.= '<a class="save" on-click="save_template"><span class="btn-text">'.$save_btn.'</span> <img src="'.SYNGULARS_ASSETS.'icons/save.png" /></a>';
 
 					$html 	.= '<p class="italic">'.__('Your base layout will be','syngulars').':</p>';
 
-					$html 	.= '<input type="radio" name="template_type" value="landing-page" /><span class="radio-label">'.__('Landing Page','syngulars').'</span>';
+					$html 	.= '<input type="radio" name="{{templateType}}" value="landing-page" /><span class="radio-label">'.__('Landing Page','syngulars').'</span>';
 					
-					$html 	.= '<input type="radio" name="template_type" value="post" /><span class="radio-label">'.__('Post','syngulars').'</span>';
+					$html 	.= '<input type="radio" name="{{templateType}}" value="post" /><span class="radio-label">'.__('Post','syngulars').'</span>';
 					
-					$html 	.= '<input type="radio" name="template_type" value="page" /><span class="radio-label">'.__('Page','syngulars').'</span>';
+					$html 	.= '<input type="radio" name="{{templateType}}" value="page" /><span class="radio-label">'.__('Page','syngulars').'</span>';
 
 					$html 	.= '<div class="clearfix">&nbsp;</div>';
 
@@ -52,7 +52,7 @@ Class SyngulARS_Dashboard {
 
 						$html 	.= '<div class="clearfix">&nbsp;</div>';
 
-						$html 	.= '<input type="radio" name="template_style" value="page" /><span class="radio-label">'.__('Blog','syngulars').'</span>';
+						$html 	.= '<input type="radio" name="{{templateStyle}}" value="blog" /><span class="radio-label">'.__('Blog','syngulars').'</span>';
 
 					$html 	.= '</div>';
 
@@ -62,7 +62,7 @@ Class SyngulARS_Dashboard {
 
 						$html 	.= '<div class="clearfix">&nbsp;</div>';
 
-						$html 	.= '<input type="radio" name="template_style" value="page" /><span class="radio-label">'.__('Portfolio','syngulars').'</span>';
+						$html 	.= '<input type="radio" name="{{templateStyle}}" value="portfolio" /><span class="radio-label">'.__('Portfolio','syngulars').'</span>';
 
 					$html 	.= '</div>';
 
@@ -72,7 +72,7 @@ Class SyngulARS_Dashboard {
 
 						$html 	.= '<div class="clearfix">&nbsp;</div>';
 
-						$html 	.= '<input type="radio" name="template_style" value="page" /><span class="radio-label">'.__('Call to Action','syngulars').'</span>';
+						$html 	.= '<input type="radio" name="{{templateStyle}}" value="calltoaction" /><span class="radio-label">'.__('Call to Action','syngulars').'</span>';
 
 					$html 	.= '</div>';
 

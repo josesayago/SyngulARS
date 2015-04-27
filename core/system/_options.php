@@ -63,7 +63,8 @@ Class SyngulARS_Options {
 		// Register script
 		wp_register_script(
 			'ractivejs',
-			'http://cdn.ractivejs.org/latest/ractive.js',
+			//'http://cdn.ractivejs.org/latest/ractive.js',
+			SYNGULARS_ASSETS . 'scripts/_ractive.js',
 			'',
 			'latest',
 			false
