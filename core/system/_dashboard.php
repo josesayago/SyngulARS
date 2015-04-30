@@ -207,7 +207,7 @@ Class SyngulARS_Dashboard {
 
 						$html 	.= '<p class="tool-section">'.__('Currently editing:', 'syngulars').' <span class="aqua">'.__('Wrapper', 'syngulars').'</span> <img src="'.SYNGULARS_ASSETS.'icons/wrapper.png" /></p>';
 
-						$html 	.= '<label for="wrapper-background">'.__('Background Color', 'syngulars').'</label><br /><input type="colorpicker" name="wrapper-background" id="wrapper-background" />';
+						$html 	.= '<input type="radio" value="wrapper-bgc" /><label for="wrapper-background">'.__('Background Color', 'syngulars').'</label><br /><input type="colorpicker" name="wrapper-background" id="wrapper-background" />';
 
 					$html 	.= '</div>';
 
