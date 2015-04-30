@@ -14,8 +14,8 @@ Class SyngulARS_Options {
 		 */
 		if ( is_admin() ) {
 			add_action( 'admin_menu', array( __CLASS__, '_menu' ) );
-			add_action( 'admin_init', array( __CLASS__, '_styles' ) );
-			add_action( 'admin_init', array( __CLASS__, '_scripts' ) );
+			add_action( 'admin_enqueue_scripts', array( __CLASS__, '_styles' ) );
+			add_action( 'admin_enqueue_scripts', array( __CLASS__, '_scripts' ) );
 		}
 	}
 	/**
@@ -51,8 +51,17 @@ Class SyngulARS_Options {
             SYNGULARS_VERSION, 
             'all' 
         );
+        wp_register_style(
+        	'jqueryui-css',
+        	'//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css',
+        	'',
+        	'1.11.4',
+        	'all'
+        );
+        wp_enqueue_style( 'wp-color-picker' ); 
         // Enqueue style
         wp_enqueue_style( 'syngulars-style' );
+        wp_enqueue_style( 'jqueryui-css' );
 	}
 	/**
 	 * Scripts
@@ -72,12 +81,26 @@ Class SyngulARS_Options {
 		wp_register_script(
 			'syngulars-dashboard',
 			SYNGULARS_ASSETS . 'scripts/_dashboard.js',
-			'',
+			array('jquery-ui-core', 'wp-color-picker'),
 			'latest',
 			true
 		);
 		// Enqueue script
 		wp_enqueue_script( 'ractivejs' );
+		wp_enqueue_script( 'jquery-ui-core' );
+		wp_enqueue_script( 'jquery-ui-resizable' );
+		wp_enqueue_script( 'jquery-ui-draggable' );
+		wp_enqueue_script( 'jquery-ui-droppable' );
+		wp_localize_script( 'syngulars-dashboard', 'syngulars', array(
+			'wrapper' 	=> __('Wrapper', 'syngulars'),
+			'menu' 		=> __('Menu', 'syngulars'),
+			'link'		=> __('Link', 'syngulars'),
+			'title'		=> __('Title', 'syngulars'),
+			'text'		=> __('Text', 'syngulars'),
+			'media'		=> __('Media', 'syngulars'),
+			'buttons'	=> __('Buttons', 'syngulars'),
+			'button'	=> __('Button', 'syngulars')
+		) );
 		wp_enqueue_script( 'syngulars-dashboard' );
 	}
 }

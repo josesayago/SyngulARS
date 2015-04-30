@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Syngulars\n"
-"POT-Creation-Date: 2015-04-24 11:09-0430\n"
-"PO-Revision-Date: 2015-04-24 11:09-0430\n"
+"POT-Creation-Date: 2015-04-29 23:05-0430\n"
+"PO-Revision-Date: 2015-04-29 23:05-0430\n"
 "Last-Translator: Jose Luis Sayago Rojas <jose.sayago@laelite.info>\n"
 "Language-Team: WP Latino <code@wplatino.com>\n"
 "Language: es\n"
@@ -27,30 +27,36 @@ msgid "Name your Theme and Pick a Base Layout"
 msgstr "Nombra tu Tema y Escoge la Estructura Base que deseas utilizar"
 
 #: ../../../core/system/_dashboard.php:12 ../../system/_dashboard.php:12
+msgid "Edit layout"
+msgstr "Edita la estructura seleccionada"
+
+#: ../../../core/system/_dashboard.php:13 ../../system/_dashboard.php:13
 msgid "Theme name"
 msgstr "Nombre de tu tema"
 
-#: ../../../core/system/_dashboard.php:13 ../../system/_dashboard.php:13
+#: ../../../core/system/_dashboard.php:14
+#: ../../../core/system/_dashboard.php:198 ../../system/_dashboard.php:14
+#: ../../system/_dashboard.php:198
 msgid "Save"
 msgstr "Guardar"
 
-#: ../../../core/system/_dashboard.php:31 ../../system/_dashboard.php:31
+#: ../../../core/system/_dashboard.php:32 ../../system/_dashboard.php:32
 msgid "Your base layout will be"
 msgstr "Esta estructura base será"
 
-#: ../../../core/system/_dashboard.php:33 ../../system/_dashboard.php:33
+#: ../../../core/system/_dashboard.php:34 ../../system/_dashboard.php:34
 msgid "Landing Page"
 msgstr "Página Principal"
 
-#: ../../../core/system/_dashboard.php:35 ../../system/_dashboard.php:35
+#: ../../../core/system/_dashboard.php:36 ../../system/_dashboard.php:36
 msgid "Post"
 msgstr "Artículo"
 
-#: ../../../core/system/_dashboard.php:37 ../../system/_dashboard.php:37
+#: ../../../core/system/_dashboard.php:38 ../../system/_dashboard.php:38
 msgid "Page"
 msgstr "Página"
 
-#: ../../../core/system/_dashboard.php:41 ../../system/_dashboard.php:41
+#: ../../../core/system/_dashboard.php:42 ../../system/_dashboard.php:42
 msgid ""
 "TIP: These base layouts can be completely customized, this is just a quick "
 "start."
@@ -58,28 +64,155 @@ msgstr ""
 "TIP: Estas estructuras base pueden ser modificadas en su totalidad, esto es "
 "una guía para que sepas por donde comenzar."
 
-#: ../../../core/system/_dashboard.php:49 ../../system/_dashboard.php:49
-msgid "Previous Step"
-msgstr "Paso Anterior"
-
-#: ../../../core/system/_dashboard.php:51 ../../system/_dashboard.php:51
-msgid "Next Step"
-msgstr "Siguiente Paso"
-
-#: ../../../core/system/_dashboard.php:59 ../../system/_dashboard.php:59
-#, fuzzy
+#: ../../../core/system/_dashboard.php:56 ../../system/_dashboard.php:56
 msgid "Blog"
 msgstr "Blog"
 
-#: ../../../core/system/_dashboard.php:69 ../../system/_dashboard.php:69
-#, fuzzy
+#: ../../../core/system/_dashboard.php:66 ../../system/_dashboard.php:66
 msgid "Portfolio"
 msgstr "Portafolio"
 
-#: ../../../core/system/_dashboard.php:79 ../../system/_dashboard.php:79
+#: ../../../core/system/_dashboard.php:76 ../../system/_dashboard.php:76
 msgid "Call to Action"
 msgstr "Llamada a la Acción"
+
+#: ../../../core/system/_dashboard.php:84
+#: ../../../core/system/_dashboard.php:136 ../../system/_dashboard.php:84
+#: ../../system/_dashboard.php:136
+msgid "Previous Step"
+msgstr "Paso Anterior"
+
+#: ../../../core/system/_dashboard.php:86
+#: ../../../core/system/_dashboard.php:138 ../../system/_dashboard.php:86
+#: ../../system/_dashboard.php:138
+msgid "Next Step"
+msgstr "Siguiente Paso"
+
+#: ../../../core/system/_dashboard.php:100 ../../system/_dashboard.php:100
+msgid "Theme"
+msgstr "Tema"
+
+#: ../../../core/system/_dashboard.php:102 ../../system/_dashboard.php:102
+msgid "Type"
+msgstr "Función"
+
+#: ../../../core/system/_dashboard.php:104 ../../system/_dashboard.php:104
+msgid "Style"
+msgstr "Estilo"
+
+#: ../../../core/system/_dashboard.php:114 ../../system/_dashboard.php:114
+msgid ""
+"Click on \"Edit\" to customize the selected layout, any other layout created "
+"previously can also be customized. A Theme is composed by different layout "
+"types, keep this in mind while building one."
+msgstr ""
+"Pulsa el botón \"Editar\" para personalizar la estructura base seleccionada, "
+"además estarán otras plantillas que hayas hecho anteriormente, podrás "
+"seleccionar cualquiera de estas y modificarlas de nuevo, recuerda, estás "
+"construyendo un tema y necesitas un conjunto de estilos para cada tipo de "
+"contenido específico."
+
+#: ../../../core/system/_dashboard.php:126 ../../system/_dashboard.php:126
+msgid "Edit"
+msgstr "Editar"
+
+#: ../../../core/system/_dashboard.php:154 ../../system/_dashboard.php:154
+msgid ""
+"You may have noticed the working area has changed regarding the previous "
+"layout you have chosen, texts, images and colors are no longer there. You "
+"will only see empty containers, this is where you will customize and create "
+"the new layout for your site, for this reason you can only edit each "
+"container options and margins."
+msgstr ""
+"Vas a notar que el espacio de trabajo ha cambiado respecto a la estructura "
+"base que seleccionaste previamente, los textos, imágenes y colores han "
+"desaparecido. Solo verás contenedores vacíos debido a que aquí modificarás y "
+"crearás el esqueleto general de tu sitio, por ende solo podrás editar las "
+"opciones de cada contenedor y los márgenes."
+
+#: ../../../core/system/_dashboard.php:158 ../../system/_dashboard.php:158
+msgid "Continue"
+msgstr "Continuar"
+
+#: ../../../core/system/_dashboard.php:170 ../../system/_dashboard.php:170
+msgid "You are editing"
+msgstr "Estás en el modo edición de"
+
+#: ../../../core/system/_dashboard.php:170 ../../system/_dashboard.php:170
+msgid ""
+"below you will find the options menu, to go to the previous screen please "
+"save your changes."
+msgstr ""
+"abajo encontrarás el menú con las opciones a tu disposición, para volver a "
+"la pantalla anterior guarda los cambios realizados"
+
+#: ../../../core/system/_dashboard.php:182 ../../system/_dashboard.php:182
+msgid "Click on one of these tools to start designing your layout"
+msgstr ""
+"Presiona sobre una de las siguientes herramientas para comenzar a diseñar"
+
+#: ../../../core/system/_dashboard.php:182 ../../system/_dashboard.php:182
+msgid "PRO TIP: Use Wrappers as a starting point"
+msgstr "PRO TIP: Empieza con los contenedores"
+
+#: ../../../core/system/_dashboard.php:186
+#: ../../../core/system/_dashboard.php:208
+#: ../../../core/system/_options.php:95 ../../system/_dashboard.php:186
+#: ../../system/_dashboard.php:208 ../../system/_options.php:95
+msgid "Wrapper"
+msgstr "Contenedor"
+
+#: ../../../core/system/_dashboard.php:188
+#: ../../../core/system/_options.php:96 ../../system/_dashboard.php:188
+#: ../../system/_options.php:96
+msgid "Menu"
+msgstr "Menú"
+
+#: ../../../core/system/_dashboard.php:190
+#: ../../../core/system/_options.php:98 ../../system/_dashboard.php:190
+#: ../../system/_options.php:98
+msgid "Title"
+msgstr "Título"
+
+#: ../../../core/system/_dashboard.php:192
+#: ../../../core/system/_options.php:99 ../../system/_dashboard.php:192
+#: ../../system/_options.php:99
+msgid "Text"
+msgstr "Texto"
+
+#: ../../../core/system/_dashboard.php:194
+#: ../../../core/system/_options.php:100 ../../system/_dashboard.php:194
+#: ../../system/_options.php:100
+msgid "Media"
+msgstr "Multimedia"
+
+#: ../../../core/system/_dashboard.php:196
+#: ../../../core/system/_options.php:101 ../../system/_dashboard.php:196
+#: ../../system/_options.php:101
+msgid "Buttons"
+msgstr "Botones"
+
+#: ../../../core/system/_dashboard.php:208 ../../system/_dashboard.php:208
+msgid "Currently editing:"
+msgstr "Estás editando:"
+
+#: ../../../core/system/_dashboard.php:210 ../../system/_dashboard.php:210
+msgid "Background Color"
+msgstr "Color sólido"
 
 #: ../../../core/system/_options.php:32 ../../system/_options.php:32
 msgid "SyngulARS"
 msgstr "SyngulARS"
+
+#: ../../../core/system/_options.php:97 ../../system/_options.php:97
+msgid "Link"
+msgstr "Enlace"
+
+#: ../../../core/system/_options.php:102 ../../system/_options.php:102
+msgid "Button"
+msgstr "Botón"
+
+#~ msgid "Drag and drop one of these tools into the layout to start"
+#~ msgstr ""
+#~ "Arrastra una de las siguientes herramientas al espacio de trabajo y "
+#~ "comienza a diseñar"

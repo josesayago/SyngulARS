@@ -5,11 +5,13 @@
  * within the SyngulARS dashboard.
  */
 
+$black: 	rgba(  0,   0,   0, 1);
 $white: 	rgba(255, 255, 255, 1);
 $cloud: 	rgba(241, 241, 242, 1);
 $aqua: 		rgba(  0, 167, 157, 1);
 $gray: 		rgba(229, 229, 229, 1);
 $concrete: 	rgba(128, 130, 132, 1);
+$red: 		rgba(255,   0,   0, 1);
 
 @mixin transitions( $sec... ) {
 	-webkit-transition: all $sec ease-out $sec;
@@ -24,7 +26,7 @@ $concrete: 	rgba(128, 130, 132, 1);
 	-ms-border-radius: $angle;
 }
 .syngulars_dashboard {
-	width: 100vw;
+	width: 87.5vw;
 	margin: -2.5vh 0 0 -1.6vw;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
@@ -38,6 +40,7 @@ $concrete: 	rgba(128, 130, 132, 1);
 .syngulars_dashboard .center { text-align: center; }
 .syngulars_dashboard .step-inactive { display: none; }
 .syngulars_dashboard .step-active { display: block; }
+.syngulars_dashboard .hide { display: none; }
 .syngulars_dashboard .content-indent {
 	margin: 0 0 0 4vw;
 }
@@ -52,7 +55,8 @@ $concrete: 	rgba(128, 130, 132, 1);
 	background-repeat: no-repeat;
 	background-position: 3% 50%;
 }
-.syngulars_dashboard .step-1 {
+.syngulars_dashboard .step-1,
+.syngulars_dashboard .step-2 {
 	padding: 1vh 2vw;
 }
 .syngulars_dashboard h2 {
@@ -66,6 +70,9 @@ $concrete: 	rgba(128, 130, 132, 1);
 }
 .syngulars_dashboard .step-1 h2:before {
 	content: '1. ';
+}
+.syngulars_dashboard .step-2 h2:before {
+	content: '2. ';
 }
 .syngulars_dashboard input[type="text"] {
 	padding: .5em;
@@ -84,81 +91,128 @@ $concrete: 	rgba(128, 130, 132, 1);
 	box-shadow: inset 0 0 2px rgba( $aqua, .7 );
 	@include transitions(500ms, 1s);
 }
-.syngulars_dashboard .step-1 a {
+.syngulars_dashboard .save {
 	margin: 0;
 	border: 0;
 	background: $aqua;
+	background-image: url('../icons/save.png');
+	background-repeat: no-repeat;
+	background-position: 90% 45%;
 	text-transform: uppercase;
 	color: $cloud;
 	font-style: italic;
 	font-weight: normal;
 	display: inline-block;
-	height: 40px;
+	height: 55.5px;
 	width: 120px;
-	padding: 15px 0 0 0;
+	padding: 0 0 0 0;
+	margin: -14px 0 0 0;
 	text-align: center;
 	font-size: 1.125em;
 	cursor: pointer;
 	@include transitions(500ms, 1s);
 }
-.syngulars_dashboard .step-1 a:hover {
-	background: lighten( $aqua, 5% );
+.syngulars_dashboard .save:hover {
+	background: darken( $aqua, 5% );
+	background-image: url('../icons/save.png');
+	background-repeat: no-repeat;
+	background-position: 90% 45%;
 	@include transitions(500ms, 1s);
 }
-.syngulars_dashboard .step-1 a span {
-	margin: 0;
+.syngulars_dashboard .save span {
+	margin: 0 0 0 -30px;
 }
-.syngulars_dashboard .step-1 a img {
-	margin: 0;
-	vertical-align: middle;
-}
-.syngulars_dashboard .step-1 input[type="radio"] {
+.syngulars_dashboard .step-1 input[type="radio"],
+.syngulars_dashboard .step-2 input[type="radio"] {
 	background: $cloud;
 }
 .syngulars_dashboard .step-1 input[type="radio"]:focus,
-.syngulars_dashboard .step-1 input[type="radio"]:checked {
+.syngulars_dashboard .step-1 input[type="radio"]:checked,
+.syngulars_dashboard .step-2 input[type="radio"]:focus,
+.syngulars_dashboard .step-2 input[type="radio"]:checked {
 	border-color: $aqua;
 	box-shadow: inset 0 0 2px rgba( $aqua, .7 );
 	background: $gray;
 }
-.syngulars_dashboard .step-1 input[type=radio]:checked:before {
+.syngulars_dashboard .step-1 input[type=radio]:checked:before,
+.syngulars_dashboard .step-2 input[type=radio]:checked:before {
 	background-color: $aqua;
 }
-.syngulars_dashboard .step-1 .radio-label {
+.syngulars_dashboard .step-1 .radio-label,
+.syngulars_dashboard .step-2 .radio-label {
 	text-transform: uppercase;
 	margin: 0 1vw 0 .3vw;
 	font-style: italic;
 }
-
+.syngulars_dashboard .theme-data {
+	position: absolute;
+	top: 65vh;
+	left: 10vw;
+	font-size: 1.125em;
+}
+.syngulars_dashboard .theme-data ul {
+	list-style: none;
+	text-transform: uppercase;
+	text-align: right;
+}
+.syngulars_dashboard .theme-data ul li {
+	color: $aqua;
+}
+.syngulars_dashboard .theme-data .label {
+	color: $concrete;
+}
 .syngulars_dashboard .content-templates {
-	margin: 0 0 0 1%;
+	margin: 0 0 0 3%;
 }
 .syngulars_dashboard .template-model img {
 	height: auto;
-	width: 70%;
+	width: 80%;
 }
 .syngulars_dashboard .template-model {
 	display: inline-block;
 	margin-bottom: 3%;
 	width: 30%;
 }
+.syngulars_dashboard .step-2 .content-indent {
+	margin: 10vh 0 0 4vw;
+}
+.syngulars_dashboard .step-2 .content-templates {
+	text-align: center;
+	width: 70vw;
+}
+.syngulars_dashboard .step-2 .template-model {
+	margin: 0;
+	padding: 0;
+}
+.syngulars_dashboard .step-2 .template-model img {
+	width: 90%;
+}
+.syngulars_dashboard .step-2 .help {
+	width: 60vw;
+	margin: 4vh 0;
+	font-size: 14px;
+}
 /**
  * Step Buttons
  */
- .syngulars_dashboard .step-btns a {
+ .syngulars_dashboard .step-btns a,
+ .syngulars_dashboard .step-2 .edit {
 	background: $gray;	
 	color: $aqua;
 	text-align: center;
 	margin: 0;
-	padding: .5em;
+	padding: .5em 1.5em;
 	border: 1px solid $aqua;
 	height: auto;
 	width: 150px;
 	font-style: normal;
 	font-weight: 100;
+	cursor: pointer;
+	text-transform: uppercase;
 	@include borderradius(50px);
 }
-.syngulars_dashboard .step-btns a:hover {
+.syngulars_dashboard .step-btns a:hover,
+.syngulars_dashboard .step-2 .edit:hover {
 	background: $concrete;
 	color: $cloud;
 	border: 1px solid $cloud;
@@ -171,11 +225,218 @@ $concrete: 	rgba(128, 130, 132, 1);
 }
 .syngulars_dashboard .step-btns {
 	display: block;
-	width: 80%;
+	width: 100%;
 }
 .syngulars_dashboard .btn-left {
 	float: left;
 }
 .syngulars_dashboard .btn-right {
 	float: right;
+}
+/**
+ * Editor Overlay
+ */
+.syngulars_dashboard .syngulars-welcome-overlay {
+	background: rgba($black, .7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999999999;
+	width: 100%;
+	height: 100%;
+}
+.syngulars_dashboard .welcome-message {
+	margin: 15% auto;
+	width: 30%;
+	height: 20%;
+	background: $cloud;
+	padding: 5% 5%;
+	text-align: center;
+}
+.syngulars_dashboard .welcome-message p {
+	margin: -5% 0 10% 0;
+}
+.syngulars_dashboard .welcome-message .continue {
+	background: $gray;	
+	color: $aqua;
+	text-align: center;
+	margin: 0;
+	padding: .5em 1.5em;
+	border: 1px solid $aqua;
+	height: auto;
+	width: 150px;
+	font-style: normal;
+	font-weight: 100;
+	cursor: pointer;
+	text-transform: uppercase;
+	@include borderradius(50px);
+}
+.syngulars_dashboard .welcome-message .continue:hover {
+	background: $concrete;
+	color: $cloud;
+	border: 1px solid $cloud;
+}
+.syngulars_dashboard .syngulars-overlay {
+	background: $white;
+	position: absolute;
+	top: -32px;
+	left: -180px;
+	z-index: 9999999;
+	overflow: hidden;
+}
+.syngulars_dashboard .syngulars-grid {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 99999999;
+}
+.syngulars_dashboard .grid-line {
+	width: 100vw;
+	height: 1px;
+	background: $gray;
+	position: absolute;
+}
+.syngulars_dashboard .grid-column {
+	height: 100%;
+	background: rgba($gray, .5);
+	position: absolute;
+	top: 0;
+	display: inline-block;
+}
+.syngulars_dashboard .syngulars-notice {
+	position: absolute;
+	top: 0;
+	background: $aqua;
+	background-image: url('../icons/alert.png');
+	background-repeat: no-repeat;
+	background-position: 9% 0%;
+	color: $white;
+	width: 100%;
+	text-align: center;
+	z-index: 999999999;
+}
+/**
+ * Tools
+ */
+.syngulars_dashboard .syngulars-tools {
+	background: $cloud;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	z-index: 999999999;
+}
+.syngulars_dashboard .syngulars-tools ul {
+	list-style: none;	
+}
+.syngulars_dashboard .syngulars-tools ul li {
+	display: inline-block;
+	margin: 0 1.5%;
+}
+.syngulars_dashboard .syngulars-tools ul li img {
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+.syngulars_dashboard .syngulars-tools .tool-btn-save {
+	margin: 0 0 0 2.5%;
+}
+.syngulars_dashboard .syngulars-tools .tool-name {
+	display: block;
+	text-transform: uppercase;
+	color: $aqua;
+}
+.syngulars_dashboard .syngulars-tools .tool-name-save {
+	font-size: 12px;
+}
+.syngulars_dashboard .toggle-tools,
+.syngulars_dashboard .close-tools, {
+	display: block;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	margin: 0 auto;
+}
+.syngulars_dashboard .hide-tools {
+	background-image: url('../icons/tools/hide.png');
+	background-repeat: no-repeat;
+}
+.syngulars_dashboard .show-tools {
+	background-image: url('../icons/tools/show.png');
+	background-repeat: no-repeat;
+}
+.syngulars_dashboard .draggable {
+	border: 1px dashed rgba($aqua, .5);
+	padding: 2%;
+	background: transparent;
+	width: 30%;
+	text-transform: uppercase;
+	color: $concrete;
+	font-style: italic;
+	cursor: move;
+	position: absolute;
+	top: 45px;
+}
+.syngulars_dashboard .draggable:hover {
+	border: 1px dashed rgba($red, .5);
+}
+.syngulars_dashboard .menu ul li {
+	display: inline-block;
+	border: 1px dotted $concrete;
+	padding: .5% 1%;
+}
+.syngulars_dashboard .draggable p {
+	vertical-align: middle;
+}
+.syngulars_dashboard .syngulars-editor {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999999991;
+}
+.syngulars_dashboard .tool-delete {
+	padding: 5px 10px;
+	background-image: url('../icons/tools/delete.png');
+	background-repeat: no-repeat;
+	cursor: pointer;
+	float: right;
+	margin: -20px -50px 0 0;
+}
+.syngulars_dashboard .tool-edit {
+	padding: 5px 10px;
+	background-image: url('../icons/tools/edit.png');
+	background-repeat: no-repeat;
+	cursor: pointer;
+	float: right;
+	margin: -20px 10px 0 0;
+}
+.syngulars_dashboard .syngulars-wrapper-tools {
+	background: $cloud;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	z-index: 9999999999;
+}
+.syngulars_dashboard .syngulars-secondary-tool {
+	height: 200px;
+}
+.syngulars_dashboard .tool-section {
+	text-transform: uppercase;
+	vertical-align: middle;
+	text-align: right;
+	margin-right: 10%;
+}
+.syngulars_dashboard .tool-section img {
+	vertical-align: middle;
+}
+.syngulars_dashboard .aqua {
+	color: $aqua;
+}
+.syngulars_dashboard .syngulars-secondary-tool .wp-picker-container .iris-picker {
+	margin-top: -306px;
 }
