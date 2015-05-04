@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Syngulars\n"
-"POT-Creation-Date: 2015-04-29 23:05-0430\n"
-"PO-Revision-Date: 2015-04-29 23:05-0430\n"
+"POT-Creation-Date: 2015-04-30 08:51-0430\n"
+"PO-Revision-Date: 2015-04-30 08:51-0430\n"
 "Last-Translator: Jose Luis Sayago Rojas <jose.sayago@laelite.info>\n"
 "Language-Team: WP Latino <code@wplatino.com>\n"
 "Language: es\n"
@@ -31,32 +31,36 @@ msgid "Edit layout"
 msgstr "Edita la estructura seleccionada"
 
 #: ../../../core/system/_dashboard.php:13 ../../system/_dashboard.php:13
+msgid "Activate your theme and add content"
+msgstr "Activa tu tema y agrega el contenido"
+
+#: ../../../core/system/_dashboard.php:14 ../../system/_dashboard.php:14
 msgid "Theme name"
 msgstr "Nombre de tu tema"
 
-#: ../../../core/system/_dashboard.php:14
-#: ../../../core/system/_dashboard.php:198 ../../system/_dashboard.php:14
-#: ../../system/_dashboard.php:198
+#: ../../../core/system/_dashboard.php:15
+#: ../../../core/system/_dashboard.php:199 ../../system/_dashboard.php:15
+#: ../../system/_dashboard.php:199
 msgid "Save"
 msgstr "Guardar"
 
-#: ../../../core/system/_dashboard.php:32 ../../system/_dashboard.php:32
+#: ../../../core/system/_dashboard.php:33 ../../system/_dashboard.php:33
 msgid "Your base layout will be"
 msgstr "Esta estructura base será"
 
-#: ../../../core/system/_dashboard.php:34 ../../system/_dashboard.php:34
+#: ../../../core/system/_dashboard.php:35 ../../system/_dashboard.php:35
 msgid "Landing Page"
 msgstr "Página Principal"
 
-#: ../../../core/system/_dashboard.php:36 ../../system/_dashboard.php:36
+#: ../../../core/system/_dashboard.php:37 ../../system/_dashboard.php:37
 msgid "Post"
 msgstr "Artículo"
 
-#: ../../../core/system/_dashboard.php:38 ../../system/_dashboard.php:38
+#: ../../../core/system/_dashboard.php:39 ../../system/_dashboard.php:39
 msgid "Page"
 msgstr "Página"
 
-#: ../../../core/system/_dashboard.php:42 ../../system/_dashboard.php:42
+#: ../../../core/system/_dashboard.php:43 ../../system/_dashboard.php:43
 msgid ""
 "TIP: These base layouts can be completely customized, this is just a quick "
 "start."
@@ -64,43 +68,43 @@ msgstr ""
 "TIP: Estas estructuras base pueden ser modificadas en su totalidad, esto es "
 "una guía para que sepas por donde comenzar."
 
-#: ../../../core/system/_dashboard.php:56 ../../system/_dashboard.php:56
+#: ../../../core/system/_dashboard.php:57 ../../system/_dashboard.php:57
 msgid "Blog"
 msgstr "Blog"
 
-#: ../../../core/system/_dashboard.php:66 ../../system/_dashboard.php:66
+#: ../../../core/system/_dashboard.php:67 ../../system/_dashboard.php:67
 msgid "Portfolio"
 msgstr "Portafolio"
 
-#: ../../../core/system/_dashboard.php:76 ../../system/_dashboard.php:76
+#: ../../../core/system/_dashboard.php:77 ../../system/_dashboard.php:77
 msgid "Call to Action"
 msgstr "Llamada a la Acción"
 
-#: ../../../core/system/_dashboard.php:84
-#: ../../../core/system/_dashboard.php:136 ../../system/_dashboard.php:84
-#: ../../system/_dashboard.php:136
+#: ../../../core/system/_dashboard.php:85
+#: ../../../core/system/_dashboard.php:137 ../../system/_dashboard.php:85
+#: ../../system/_dashboard.php:137
 msgid "Previous Step"
 msgstr "Paso Anterior"
 
-#: ../../../core/system/_dashboard.php:86
-#: ../../../core/system/_dashboard.php:138 ../../system/_dashboard.php:86
-#: ../../system/_dashboard.php:138
+#: ../../../core/system/_dashboard.php:87
+#: ../../../core/system/_dashboard.php:139 ../../system/_dashboard.php:87
+#: ../../system/_dashboard.php:139
 msgid "Next Step"
 msgstr "Siguiente Paso"
 
-#: ../../../core/system/_dashboard.php:100 ../../system/_dashboard.php:100
+#: ../../../core/system/_dashboard.php:101 ../../system/_dashboard.php:101
 msgid "Theme"
 msgstr "Tema"
 
-#: ../../../core/system/_dashboard.php:102 ../../system/_dashboard.php:102
+#: ../../../core/system/_dashboard.php:103 ../../system/_dashboard.php:103
 msgid "Type"
 msgstr "Función"
 
-#: ../../../core/system/_dashboard.php:104 ../../system/_dashboard.php:104
+#: ../../../core/system/_dashboard.php:105 ../../system/_dashboard.php:105
 msgid "Style"
 msgstr "Estilo"
 
-#: ../../../core/system/_dashboard.php:114 ../../system/_dashboard.php:114
+#: ../../../core/system/_dashboard.php:115 ../../system/_dashboard.php:115
 msgid ""
 "Click on \"Edit\" to customize the selected layout, any other layout created "
 "previously can also be customized. A Theme is composed by different layout "
@@ -112,11 +116,11 @@ msgstr ""
 "construyendo un tema y necesitas un conjunto de estilos para cada tipo de "
 "contenido específico."
 
-#: ../../../core/system/_dashboard.php:126 ../../system/_dashboard.php:126
+#: ../../../core/system/_dashboard.php:127 ../../system/_dashboard.php:127
 msgid "Edit"
 msgstr "Editar"
 
-#: ../../../core/system/_dashboard.php:154 ../../system/_dashboard.php:154
+#: ../../../core/system/_dashboard.php:155 ../../system/_dashboard.php:155
 msgid ""
 "You may have noticed the working area has changed regarding the previous "
 "layout you have chosen, texts, images and colors are no longer there. You "
@@ -130,15 +134,15 @@ msgstr ""
 "crearás el esqueleto general de tu sitio, por ende solo podrás editar las "
 "opciones de cada contenedor y los márgenes."
 
-#: ../../../core/system/_dashboard.php:158 ../../system/_dashboard.php:158
+#: ../../../core/system/_dashboard.php:159 ../../system/_dashboard.php:159
 msgid "Continue"
 msgstr "Continuar"
 
-#: ../../../core/system/_dashboard.php:170 ../../system/_dashboard.php:170
+#: ../../../core/system/_dashboard.php:171 ../../system/_dashboard.php:171
 msgid "You are editing"
 msgstr "Estás en el modo edición de"
 
-#: ../../../core/system/_dashboard.php:170 ../../system/_dashboard.php:170
+#: ../../../core/system/_dashboard.php:171 ../../system/_dashboard.php:171
 msgid ""
 "below you will find the options menu, to go to the previous screen please "
 "save your changes."
@@ -146,59 +150,74 @@ msgstr ""
 "abajo encontrarás el menú con las opciones a tu disposición, para volver a "
 "la pantalla anterior guarda los cambios realizados"
 
-#: ../../../core/system/_dashboard.php:182 ../../system/_dashboard.php:182
+#: ../../../core/system/_dashboard.php:183 ../../system/_dashboard.php:183
 msgid "Click on one of these tools to start designing your layout"
 msgstr ""
 "Presiona sobre una de las siguientes herramientas para comenzar a diseñar"
 
-#: ../../../core/system/_dashboard.php:182 ../../system/_dashboard.php:182
+#: ../../../core/system/_dashboard.php:183 ../../system/_dashboard.php:183
 msgid "PRO TIP: Use Wrappers as a starting point"
 msgstr "PRO TIP: Empieza con los contenedores"
 
-#: ../../../core/system/_dashboard.php:186
-#: ../../../core/system/_dashboard.php:208
-#: ../../../core/system/_options.php:95 ../../system/_dashboard.php:186
-#: ../../system/_dashboard.php:208 ../../system/_options.php:95
+#: ../../../core/system/_dashboard.php:187
+#: ../../../core/system/_dashboard.php:209
+#: ../../../core/system/_options.php:95 ../../system/_dashboard.php:187
+#: ../../system/_dashboard.php:209 ../../system/_options.php:95
 msgid "Wrapper"
 msgstr "Contenedor"
 
-#: ../../../core/system/_dashboard.php:188
-#: ../../../core/system/_options.php:96 ../../system/_dashboard.php:188
+#: ../../../core/system/_dashboard.php:189
+#: ../../../core/system/_options.php:96 ../../system/_dashboard.php:189
 #: ../../system/_options.php:96
 msgid "Menu"
 msgstr "Menú"
 
-#: ../../../core/system/_dashboard.php:190
-#: ../../../core/system/_options.php:98 ../../system/_dashboard.php:190
+#: ../../../core/system/_dashboard.php:191
+#: ../../../core/system/_options.php:98 ../../system/_dashboard.php:191
 #: ../../system/_options.php:98
 msgid "Title"
 msgstr "Título"
 
-#: ../../../core/system/_dashboard.php:192
-#: ../../../core/system/_options.php:99 ../../system/_dashboard.php:192
+#: ../../../core/system/_dashboard.php:193
+#: ../../../core/system/_options.php:99 ../../system/_dashboard.php:193
 #: ../../system/_options.php:99
 msgid "Text"
 msgstr "Texto"
 
-#: ../../../core/system/_dashboard.php:194
-#: ../../../core/system/_options.php:100 ../../system/_dashboard.php:194
+#: ../../../core/system/_dashboard.php:195
+#: ../../../core/system/_options.php:100 ../../system/_dashboard.php:195
 #: ../../system/_options.php:100
 msgid "Media"
 msgstr "Multimedia"
 
-#: ../../../core/system/_dashboard.php:196
-#: ../../../core/system/_options.php:101 ../../system/_dashboard.php:196
+#: ../../../core/system/_dashboard.php:197
+#: ../../../core/system/_options.php:101 ../../system/_dashboard.php:197
 #: ../../system/_options.php:101
 msgid "Buttons"
 msgstr "Botones"
 
-#: ../../../core/system/_dashboard.php:208 ../../system/_dashboard.php:208
+#: ../../../core/system/_dashboard.php:209 ../../system/_dashboard.php:209
 msgid "Currently editing:"
 msgstr "Estás editando:"
 
-#: ../../../core/system/_dashboard.php:210 ../../system/_dashboard.php:210
+#: ../../../core/system/_dashboard.php:211 ../../system/_dashboard.php:211
 msgid "Background Color"
 msgstr "Color sólido"
+
+#: ../../../core/system/_dashboard.php:227 ../../system/_dashboard.php:227
+msgid ""
+"You already set your content display options, now you just have to add it, "
+"please click on \"Activate Theme\" to complete the task. Remember if "
+"something seems off, you can come back and edit whatever you want."
+msgstr ""
+"Ya diste los parámetros generales de como se verá tu contenido ahora solo "
+"falta agregarlo, por favor haz clic en \"Activar Tema\" y finaliza el "
+"trabajo. Recuerda si alguna configuración no es de tu agrado siempre podrás "
+"volver al editor desde el menú situado a tu izquierda."
+
+#: ../../../core/system/_dashboard.php:241 ../../system/_dashboard.php:241
+msgid "Activate Theme"
+msgstr "Activar Tema"
 
 #: ../../../core/system/_options.php:32 ../../system/_options.php:32
 msgid "SyngulARS"

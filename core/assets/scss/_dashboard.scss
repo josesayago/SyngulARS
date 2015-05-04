@@ -47,7 +47,7 @@ $red: 		rgba(255,   0,   0, 1);
 .syngulars_dashboard h1 {
 	background: $aqua;
 	color: $cloud;
-	padding: 5vh 0 0 9%;
+	padding: 5vh 0 0 11%;
 	text-transform: uppercase;
 	font-weight: 100;
 	height: 7.9vh;
@@ -56,7 +56,8 @@ $red: 		rgba(255,   0,   0, 1);
 	background-position: 3% 50%;
 }
 .syngulars_dashboard .step-1,
-.syngulars_dashboard .step-2 {
+.syngulars_dashboard .step-2,
+.syngulars_dashboard .step-4 {
 	padding: 1vh 2vw;
 }
 .syngulars_dashboard h2 {
@@ -73,6 +74,9 @@ $red: 		rgba(255,   0,   0, 1);
 }
 .syngulars_dashboard .step-2 h2:before {
 	content: '2. ';
+}
+.syngulars_dashboard .step-4 h2:before {
+	content: '3. ';
 }
 .syngulars_dashboard input[type="text"] {
 	padding: .5em;
@@ -414,7 +418,12 @@ $red: 		rgba(255,   0,   0, 1);
 	float: right;
 	margin: -20px 10px 0 0;
 }
-.syngulars_dashboard .syngulars-wrapper-tools {
+.syngulars_dashboard .syngulars-wrapper-tools,
+.syngulars_dashboard .syngulars-menu-tools,
+.syngulars_dashboard .syngulars-title-tools,
+.syngulars_dashboard .syngulars-text-tools,
+.syngulars_dashboard .syngulars-media-tools,
+.syngulars_dashboard .syngulars-buttons-tools {
 	background: $cloud;
 	text-align: center;
 	width: 100%;
@@ -442,4 +451,7 @@ $red: 		rgba(255,   0,   0, 1);
 }
 .syngulars_dashboard .syngulars-secondary-tool label {
 	text-align: left;
+}
+.syngulars_dashboard .syngulars-secondary-tool img {
+	height: 70%;
 }

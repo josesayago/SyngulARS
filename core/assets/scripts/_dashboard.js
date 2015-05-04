@@ -44,8 +44,28 @@ jQuery(document).ready(function(){
 		});
 	});
 
-	jQuery( '.close-tools' ).on('click tap', function(){
+	jQuery( '.syngulars-wrapper-tools .close-tools' ).on('click tap', function(){
 		jQuery( '.syngulars-wrapper-tools' ).toggleClass('hide');
+	});
+
+	jQuery( '.syngulars-menu-tools .close-tools' ).on('click tap', function(){
+		jQuery( '.syngulars-menu-tools' ).toggleClass('hide');
+	});
+
+	jQuery( '.syngulars-title-tools .close-tools' ).on('click tap', function(){
+		jQuery( '.syngulars-title-tools' ).toggleClass('hide');
+	});
+
+	jQuery( '.syngulars-text-tools .close-tools' ).on('click tap', function(){
+		jQuery( '.syngulars-text-tools' ).toggleClass('hide');
+	});
+
+	jQuery( '.syngulars-media-tools .close-tools' ).on('click tap', function(){
+		jQuery( '.syngulars-media-tools' ).toggleClass('hide');
+	});
+
+	jQuery( '.syngulars-buttons-tools .close-tools' ).on('click tap', function(){
+		jQuery( '.syngulars-buttons-tools' ).toggleClass('hide');
 	});
 
 	jQuery( '.tool-save' ).on('click tap', function(){
@@ -103,7 +123,8 @@ jQuery(document).ready(function(){
 		});
 	});
 	jQuery( '.tool-menu' ).on('click tap', function(){
-		var draggable_div = jQuery('<div class="draggable menu">'+syngulars.menu+' <ul><li>'+syngulars.link+'</li><li>'+syngulars.link+'</li><li>'+syngulars.link+'</li><li>'+syngulars.link+'</li><li>'+syngulars.link+'</li></ul> <a class="tool-edit">&nbsp;</a><a class="tool-delete">&nbsp;</a></div>');
+		var divId = jQuery('.draggable').length;
+		var draggable_div = jQuery('<div class="draggable menu" id="menu-'+divId+'">'+syngulars.menu+' <ul><li>'+syngulars.link+'</li><li>'+syngulars.link+'</li><li>'+syngulars.link+'</li><li>'+syngulars.link+'</li><li>'+syngulars.link+'</li></ul> <a class="tool-edit">&nbsp;</a><a class="tool-delete">&nbsp;</a></div>');
 		jQuery( '.syngulars-editor' ).append( draggable_div );
 		jQuery( '.draggable' ).draggable({ 
 			containment: ".syngulars-editor", 
@@ -115,10 +136,16 @@ jQuery(document).ready(function(){
 			}, 500, "linear", function(){
 				jQuery(this).remove();
 			});
+		});
+		jQuery( '#menu-'+divId+' .tool-edit' ).on('click tap', function(){
+			if( jQuery(this).parent().attr('class').match(/menu/) ) {
+				jQuery( '.syngulars-menu-tools' ).toggleClass('hide');
+			}
 		});
 	});
 	jQuery( '.tool-title' ).on('click tap', function(){
-		var draggable_div = jQuery('<div class="draggable title">'+syngulars.title+' <a class="tool-edit">&nbsp;</a><a class="tool-delete">&nbsp;</a></div>');
+		var divId = jQuery('.draggable').length;
+		var draggable_div = jQuery('<div class="draggable title" id="title-'+divId+'">'+syngulars.title+' <a class="tool-edit">&nbsp;</a><a class="tool-delete">&nbsp;</a></div>');
 		jQuery( '.syngulars-editor' ).append( draggable_div );
 		jQuery( '.draggable' ).draggable({ 
 			containment: ".syngulars-editor", 
@@ -130,10 +157,16 @@ jQuery(document).ready(function(){
 			}, 500, "linear", function(){
 				jQuery(this).remove();
 			});
+		});
+		jQuery( '#title-'+divId+' .tool-edit' ).on('click tap', function(){
+			if( jQuery(this).parent().attr('class').match(/title/) ) {
+				jQuery( '.syngulars-title-tools' ).toggleClass('hide');
+			}
 		});
 	});
 	jQuery( '.tool-text' ).on('click tap', function(){
-		var draggable_div = jQuery('<div class="draggable text">'+syngulars.text+' <a class="tool-edit">&nbsp;</a><a class="tool-delete">&nbsp;</a></div>');
+		var divId = jQuery('.draggable').length;
+		var draggable_div = jQuery('<div class="draggable text" id="text-'+divId+'">'+syngulars.text+' <a class="tool-edit">&nbsp;</a><a class="tool-delete">&nbsp;</a></div>');
 		jQuery( '.syngulars-editor' ).append( draggable_div );
 		jQuery( '.draggable' ).draggable({ 
 			containment: ".syngulars-editor", 
@@ -145,10 +178,16 @@ jQuery(document).ready(function(){
 			}, 500, "linear", function(){
 				jQuery(this).remove();
 			});
+		});
+		jQuery( '#text-'+divId+' .tool-edit' ).on('click tap', function(){
+			if( jQuery(this).parent().attr('class').match(/text/) ) {
+				jQuery( '.syngulars-text-tools' ).toggleClass('hide');
+			}
 		});
 	});
 	jQuery( '.tool-media' ).on('click tap', function(){
-		var draggable_div = jQuery('<div class="draggable media">'+syngulars.media+' <a class="tool-edit">&nbsp;</a><a class="tool-delete">&nbsp;</a></div>');
+		var divId = jQuery('.draggable').length;
+		var draggable_div = jQuery('<div class="draggable media" id="media-'+divId+'">'+syngulars.media+' <a class="tool-edit">&nbsp;</a><a class="tool-delete">&nbsp;</a></div>');
 		jQuery( '.syngulars-editor' ).append( draggable_div );
 		jQuery( '.draggable' ).draggable({ 
 			containment: ".syngulars-editor", 
@@ -161,9 +200,15 @@ jQuery(document).ready(function(){
 				jQuery(this).remove();
 			});
 		});
+		jQuery( '#media-'+divId+' .tool-edit' ).on('click tap', function(){
+			if( jQuery(this).parent().attr('class').match(/media/) ) {
+				jQuery( '.syngulars-media-tools' ).toggleClass('hide');
+			}
+		});
 	});
 	jQuery( '.tool-buttons' ).on('click tap', function(){
-		var draggable_div = jQuery('<div class="draggable buttons">'+syngulars.button+' <a class="tool-edit">&nbsp;</a><a class="tool-delete">&nbsp;</a></div>');
+		var divId = jQuery('.draggable').length;
+		var draggable_div = jQuery('<div class="draggable buttons" id="buttons-'+divId+'">'+syngulars.button+' <a class="tool-edit">&nbsp;</a><a class="tool-delete">&nbsp;</a></div>');
 		jQuery( '.syngulars-editor' ).append( draggable_div );
 		jQuery( '.draggable' ).draggable({ 
 			containment: ".syngulars-editor", 
@@ -175,10 +220,39 @@ jQuery(document).ready(function(){
 			}, 500, "linear", function(){
 				jQuery(this).remove();
 			});
+		});
+		jQuery( '#buttons-'+divId+' .tool-edit' ).on('click tap', function(){
+			if( jQuery(this).parent().attr('class').match(/buttons/) ) {
+				jQuery( '.syngulars-buttons-tools' ).toggleClass('hide');
+			}
 		});
 	});
 
 	jQuery('#wrapper-background').wpColorPicker({
 		border: false
+	});
+
+	jQuery('.tool-margins').on('click tap', function(){
+		if( jQuery(this).find('img').attr('src') == 'http://wordpress-beta.loc/wp-content/plugins/syngulars/core/assets/images/marg.png' ) {
+			jQuery(this).find('img').attr('src', 'http://wordpress-beta.loc/wp-content/plugins/syngulars/core/assets/images/contenedor.png');
+		} else {
+			jQuery(this).find('img').attr('src', 'http://wordpress-beta.loc/wp-content/plugins/syngulars/core/assets/images/marg.png');
+		}
+	});
+
+	jQuery('.tool-titles').on('click tap', function(){
+		if( jQuery(this).find('img').attr('src') == 'http://wordpress-beta.loc/wp-content/plugins/syngulars/core/assets/images/temarg.png' ) {
+			jQuery(this).find('img').attr('src', 'http://wordpress-beta.loc/wp-content/plugins/syngulars/core/assets/images/titulo.png');
+		} else {
+			jQuery(this).find('img').attr('src', 'http://wordpress-beta.loc/wp-content/plugins/syngulars/core/assets/images/temarg.png');
+		}
+	});
+
+	jQuery('.tool-texts').on('click tap', function(){
+		if( jQuery(this).find('img').attr('src') == 'http://wordpress-beta.loc/wp-content/plugins/syngulars/core/assets/images/tmarg.png' ) {
+			jQuery(this).find('img').attr('src', 'http://wordpress-beta.loc/wp-content/plugins/syngulars/core/assets/images/texto.png');
+		} else {
+			jQuery(this).find('img').attr('src', 'http://wordpress-beta.loc/wp-content/plugins/syngulars/core/assets/images/tmarg.png');
+		}
 	});
 });

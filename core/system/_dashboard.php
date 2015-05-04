@@ -10,6 +10,7 @@ Class SyngulARS_Dashboard {
 		$title 		= __('Welcome to the WordPress Theme Builder', 'syngulars');
 		$title_S1 	= __('Name your Theme and Pick a Base Layout', 'syngulars');
 		$title_S2	= __('Edit layout', 'syngulars');
+		$title_S3	= __('Activate your theme and add content', 'syngulars');
 		$theme_name = __('Theme name', 'syngulars');
 		$save_btn 	= __('Save', 'syngulars');
 		
@@ -135,7 +136,7 @@ Class SyngulARS_Dashboard {
 
 					$html 	.= '<a class="btn-left" id="step-1">'.__('Previous Step','syngulars').'</a>';
 
-					$html 	.= '<a class="btn-right" id="step-2">'.__('Next Step', 'syngulars').'</a>';
+					$html 	.= '<a class="btn-right" id="step-4">'.__('Next Step', 'syngulars').'</a>';
 
 				$html 	.= '</div>';
 
@@ -205,11 +206,89 @@ Class SyngulARS_Dashboard {
 
 						$html 	.= '<a class="close-tools hide-tools">&nbsp;</a>';
 
-						$html 	.= '<p class="tool-section">'.__('Currently editing:', 'syngulars').' <span class="aqua">'.__('Wrapper', 'syngulars').'</span> <img src="'.SYNGULARS_ASSETS.'icons/wrapper.png" /></p>';
+						$html 	.= '<a class="tool-margins"><img src="'.SYNGULARS_ASSETS.'images/contenedor.png" /></a>';
 
-						$html 	.= '<input type="radio" value="wrapper-bgc" /><label for="wrapper-background">'.__('Background Color', 'syngulars').'</label><br /><input type="colorpicker" name="wrapper-background" id="wrapper-background" />';
+						//$html 	.= '<p class="tool-section">'.__('Currently editing:', 'syngulars').' <span class="aqua">'.__('Wrapper', 'syngulars').'</span> <img src="'.SYNGULARS_ASSETS.'icons/wrapper.png" /></p>';
+
+						// $html 	.= '<label for="wrapper-background">'.__('Background Color', 'syngulars').'</label><br /><input type="colorpicker" name="wrapper-background" id="wrapper-background" />';
 
 					$html 	.= '</div>';
+
+					$html 	.= '<div class="syngulars-menu-tools syngulars-secondary-tool hide">';
+
+						$html 	.= '<a class="close-tools hide-tools">&nbsp;</a>';
+
+						$html 	.= '<img src="'.SYNGULARS_ASSETS.'images/menu.png" />';
+
+					$html 	.= '</div>';
+
+					$html 	.= '<div class="syngulars-title-tools syngulars-secondary-tool hide">';
+
+						$html 	.= '<a class="close-tools hide-tools">&nbsp;</a>';
+
+						$html 	.= '<a class="tool-titles"><img src="'.SYNGULARS_ASSETS.'images/titulo.png" /></a>';
+
+					$html 	.= '</div>';
+
+					$html 	.= '<div class="syngulars-text-tools syngulars-secondary-tool hide">';
+
+						$html 	.= '<a class="close-tools hide-tools">&nbsp;</a>';
+
+						$html 	.= '<a class="tool-texts"><img src="'.SYNGULARS_ASSETS.'images/texto.png" /></a>';
+
+					$html 	.= '</div>';
+
+					$html 	.= '<div class="syngulars-media-tools syngulars-secondary-tool hide">';
+
+						$html 	.= '<a class="close-tools hide-tools">&nbsp;</a>';
+
+						$html 	.= '<img src="'.SYNGULARS_ASSETS.'images/multimedia.png" />';
+
+					$html 	.= '</div>';
+
+					$html 	.= '<div class="syngulars-buttons-tools syngulars-secondary-tool hide">';
+
+						$html 	.= '<a class="close-tools hide-tools">&nbsp;</a>';
+
+						$html 	.= '<img src="'.SYNGULARS_ASSETS.'images/boton.png" />';
+
+					$html 	.= '</div>';
+
+				$html 	.= '</div>';
+
+			$html 	.= '</div>';
+
+			$html 	.= '<div class="step-4 step-inactive">';
+
+				$html 	.= '<h2>'.$title_S3.'</h2>';
+
+				$html 	.= '<div class="content-indent">';
+
+					$html 	.= '<p class="help">';
+
+						$html 	.= __('You already set your content display options, now you just have to add it, please click on "Activate Theme" to complete the task. Remember if something seems off, you can come back and edit whatever you want.','syngulars');
+
+					$html 	.= '</p>';
+
+					$html 	.= '<div class="content-templates">';
+
+						$html 	.= '<div class="step-btns">';
+
+							
+
+						$html 	.= '</div>';
+
+					$html 	.= '</div>';
+
+				$html 	.= '</div>';
+
+				$html 	.= '<div class="clearfix">&nbsp;</div>';
+
+				$html 	.= '<div class="step-btns">';
+
+					$html 	.= '<a class="btn-left" id="step-2">'.__('Previous Step','syngulars').'</a>';
+
+					$html 	.= '<a class="btn-right">'.__('Activate Theme','syngulars').'</a>';
 
 				$html 	.= '</div>';
 
